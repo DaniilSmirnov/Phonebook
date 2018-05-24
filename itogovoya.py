@@ -440,11 +440,18 @@ class Data(object):
         self.Init(self)
 
         myfile = open(filename, 'w')
+
+        i = 1
+
         for line in lines:
-            if line.find("room=" + '"' + str(room) + '"') == -1:
+            if line.find("room=" + '"' + str(room) + '"') == -1 and line.find("res") == -1:
+                buf = line.split("position")
+                line = "<" + "position" + str(i) + str(buf[1])[1:] + "position" + str(i) + ">" + "\n"
                 myfile.write(line)
-            else:
+                i += 1
                 k -= 1
+            if (line.find("room=" + '"' + str(room) + '"') == -1) and (line.find("position") == -1):
+                myfile.write(line)
         myfile.close()
 
     def Search(self, pos, item):

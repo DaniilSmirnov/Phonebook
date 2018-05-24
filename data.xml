@@ -1,4 +1,4 @@
 <res i="2">
-<position1 room="3" phone="4844848" workers="Petrov">2</position1>
-<position2 room="228" phone="777" workers="Keklik Keklikov">2</position2>
+<position1 room="2" phone="02" workers="Petrov, Ivanov, Kozlov">2</position1>
+<position2 room="1" phone="01" workers="Keklik">2</position2>
 </res>
