@@ -321,7 +321,6 @@ class Search_Ui(object):
         self.okbutton.setText(_translate("Dialog", "OK"))
         self.searchbutton.setText(_translate("Dialog", "Search"))
 
-        self.selectbox.addItem("Room")
         self.selectbox.addItem("Worker")
 
 
