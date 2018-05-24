@@ -463,7 +463,7 @@ class Data(object):
         i = 0
 
         for line in lines:
-            if line.find(pos + "=" + '"' + str(item)) != -1:
+            if (line.find(pos + "=") != 1) and (line.find(str(item)) != -1):
                 self.Close(self)
                 returner = self.Read(self, "room", i) + " " + self.Read(self, "phone", i) + " " + self.Read(self, "workers", i)
                 self.Init(self)
