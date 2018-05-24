@@ -208,6 +208,7 @@ class Edit_Ui(object):
 
     def retranslateUi(self, Dialog):
         _translate = QtCore.QCoreApplication.translate
+        Edit_Ui.setWindowTitle(_translate("Edit_Ui", "Edit"))
         self.roomlabel.setText(_translate("Edit_Ui", "room"))
         self.workerslabel.setText(_translate("Edit_Ui", "Workers"))
         self.phonelabel.setText(_translate("Edit_Ui", "phone"))
