@@ -206,7 +206,7 @@ class Edit_Ui(object):
         self.retranslateUi(Edit_Ui)
         QtCore.QMetaObject.connectSlotsByName(Edit_Ui)
 
-    def retranslateUi(self, Dialog):
+    def retranslateUi(self, Edit_ui):
         _translate = QtCore.QCoreApplication.translate
         Edit_Ui.setWindowTitle(_translate("Edit_Ui", "Edit"))
         self.roomlabel.setText(_translate("Edit_Ui", "room"))
