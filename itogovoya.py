@@ -208,7 +208,6 @@ class Edit_Ui(object):
 
     def retranslateUi(self, Edit_ui):
         _translate = QtCore.QCoreApplication.translate
-        Edit_Ui.setWindowTitle(_translate("Edit_Ui", "Edit"))
         self.roomlabel.setText(_translate("Edit_Ui", "room"))
         self.workerslabel.setText(_translate("Edit_Ui", "Workers"))
         self.phonelabel.setText(_translate("Edit_Ui", "phone"))
@@ -457,7 +456,7 @@ class Data(object):
         i = 0
 
         for line in lines:
-            if line.find(pos + "=" + '"' + str(item) + '"') != -1:
+            if line.find(pos + "=" + '"' + str(item)) != -1:
                 self.Close(self)
                 returner = self.Read(self, "room", i) + " " + self.Read(self, "phone", i) + " " + self.Read(self, "workers", i)
                 self.Init(self)
